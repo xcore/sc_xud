@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<xpd>
+    <description>XMOS Low level USB Library (binary).</description>
+    <location>git@github.com:xcore/sc_xud</location>
+    <name>sc_xud</name>
+    <maintainer>davelxmos</maintainer>
+    <scope>product</scope>
+    <vendor>XMOS</vendor>
+    <xpd_version>1.0</xpd_version>
+</xpd>
