@@ -4,6 +4,7 @@
     <location>git@github.com:xcore/sc_xud</location>
     <name>sc_xud</name>
     <maintainer>davelxmos</maintainer>
+    <release parenthash = "af78ad5fa9f4a9ba42e69603ed9f3c3d511eab75" version = "0.6.0rc0"></release>
     <scope>product</scope>
     <vendor>XMOS</vendor>
     <xpd_version>1.0</xpd_version>
