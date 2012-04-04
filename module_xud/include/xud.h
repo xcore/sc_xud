@@ -57,7 +57,7 @@ typedef unsigned int XUD_ep;
  *  @param      buffer Buffer to store received data into
  *  @return     Datalength (in bytes) 
  */
-inline int XUD_GetData(XUD_ep c, unsigned char buffer[]);
+int XUD_GetData(XUD_ep c, unsigned char buffer[]);
 
 /** XUD_GetData
  *  @brief      Essentially the same as XUD_GetData but does not perform the initial handshake 
@@ -65,7 +65,7 @@ inline int XUD_GetData(XUD_ep c, unsigned char buffer[]);
  *  @param      buffer Buffer to store received data into
  *  @return     Datalength (in bytes) 
  */
-inline int XUD_GetData_NoReq(XUD_ep c, unsigned char buffer[]);
+int XUD_GetData_NoReq(XUD_ep c, unsigned char buffer[]);
 
 
 
