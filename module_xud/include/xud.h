@@ -57,7 +57,7 @@ typedef unsigned int XUD_ep;
  *  @param      buffer Buffer to store received data into
  *  @return     Datalength (in bytes) 
  */
-inline int XUD_GetData(XUD_ep c, unsigned char buffer[]);
+int XUD_GetData(XUD_ep c, unsigned char buffer[]);
 
 /** XUD_GetData
  *  @brief      Essentially the same as XUD_GetData but does not perform the initial handshake 
@@ -65,7 +65,7 @@ inline int XUD_GetData(XUD_ep c, unsigned char buffer[]);
  *  @param      buffer Buffer to store received data into
  *  @return     Datalength (in bytes) 
  */
-inline int XUD_GetData_NoReq(XUD_ep c, unsigned char buffer[]);
+int XUD_GetData_NoReq(XUD_ep c, unsigned char buffer[]);
 
 
 
@@ -282,7 +282,7 @@ void XUD_UnStall_In(int epNum);
 
 
 
-inline void XUD_SetReady(XUD_ep e, int pid)
+static inline void XUD_SetReady(XUD_ep e, int pid)
 {
     int chan_array_ptr;
     int xud_chan;
@@ -295,7 +295,7 @@ inline void XUD_SetReady(XUD_ep e, int pid)
 }
 
 #if 0
-inline void XUD_SetReady_Out(XUD_ep e, int x, unsigned bufferPtr)
+static inline void XUD_SetReady_Out(XUD_ep e, int x, unsigned bufferPtr)
 {
     int chan_array_ptr;
     int xud_chan;
@@ -313,7 +313,7 @@ inline void XUD_SetReady_Out(XUD_ep e, int x, unsigned bufferPtr)
 }
 #endif
 
-inline void XUD_SetReady_In(XUD_ep e, int pid, unsigned bufferPtr, int len)
+static inline void XUD_SetReady_In(XUD_ep e, int pid, unsigned bufferPtr, int len)
 {
     int chan_array_ptr;
     int xud_chan;
@@ -358,7 +358,7 @@ inline void XUD_SetReady_In(XUD_ep e, int pid, unsigned bufferPtr, int len)
 
 
 #if 0
-inline int XUD_GetData_Inline(XUD_ep e, chanend c)
+static inline int XUD_GetData_Inline(XUD_ep e, chanend c)
 {
     int tailLen, dataLen;
     unsigned p, p0;
@@ -420,7 +420,7 @@ inline int XUD_GetData_Inline(XUD_ep e, chanend c)
 }
 #endif
 
-inline void XUD_SetData_Inline(XUD_ep e, chanend c)
+static inline void XUD_SetData_Inline(XUD_ep e, chanend c)
 {
     unsigned datum;
     unsigned p;
